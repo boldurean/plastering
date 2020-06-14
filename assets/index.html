@@ -17,8 +17,8 @@
       <link rel="stylesheet" href="css/style.css">
 
       <!--Scripts-->
-      <script src="js/script.js"></script>
-      <script src="js/lib/jquery-3.5.1.min.js"></script>
+      <script src="js/script.js" defer></script>
+      <script src="js/lib/jquery-3.5.1.min.js" defer></script>
 
    </head>
    <body>
@@ -46,33 +46,43 @@
          </div>
 
          <div class="container header__container">
+
             <!--header content-->
+
             <div class="header__content">
 
                <!--content text-->
+
                <div class="header__content-text">
-                  <h1 class="header__title">Автоматизированная штукатурка стен</h1>
-                  <p class="header__subtitle">Идеально ровные стены в кратчайшие сроки</p>
+                  <h1 class="header__title">Автоматизированная штукатурка стен</h1>
+                  <p class="header__subtitle">Идеально ровные стены в кротчайшие сроки</p>
                   <div class="header__pricetag">
                      <small class="header__pricetag-text">Стоимость работ <br> от <strong>300</strong> руб/м<sup>2</sup></small>
                   </div>
                   <p class="header__payment">Оплата по факту!</p>
                </div>
 
-               <!--header form-->
 
-               <form action="#" class="header__form">
-                  <p class="header__form-title">Для расчёта точной стоимости закажите <strong>выезд замерщика</strong></p>
-                  <fieldset>
-                     <legend>Ваше Имя</legend>
-                     <input class="header__form-input" type="text" name="userName" inputmode="none">
-                  </fieldset>
-                  <fieldset>
-                     <legend>Ваше Email</legend>
-                     <input class="header__form-input" type="email" name="userEmail" inputmode="email">
-                  </fieldset>
-                  <button class="btn btn-primary header__form-button">Оставьте заявку</button>
-               </form>
+               <div class="header__form-wrap">
+
+                  <!--header form-->
+
+                  <form action="#" class="header__form">
+                     <p class="header__form-title">Для расчёта точной стоимости закажите <strong>выезд замерщика</strong></p>
+                     <fieldset>
+                        <legend>Ваше Имя</legend>
+                        <input class="header__form-input" type="text" name="userName" inputmode="none">
+                     </fieldset>
+                     <fieldset>
+                        <legend>Номер телефона</legend>
+                        <input class="header__form-input" type="email" name="userEmail" inputmode="email">
+                     </fieldset>
+                     <button class="btn btn-primary header__form-button">Оставьте заявку</button>
+                     <p class="header__form-text">Приедем в день обращения*</p>
+                  </form>
+
+                  <small class="header__workdays">* - выезды на замер осуществляются в рабоче дни Пн-Пт с 9:00 до 18:00</small>
+               </div>
 
             </div>
          </div>
