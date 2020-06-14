@@ -1,0 +1,64 @@
+
+//max width
+
+@media screen and (max-width: 992px)
+   .header
+      background-position: top left
+      &__container
+         flex-wrap: wrap
+      .logo
+         margin-top: 3rem
+         justify-content: center
+         flex-basis: 100%
+         order: 3
+      &__contacts
+         margin: 0 auto
+         justify-content: center
+      &__content
+         flex-direction: column
+         align-items: center
+         text-align: center
+         &-text
+            display: flex
+            flex-direction: column
+            align-items: center
+            margin: 0 auto
+      &__workdays
+         margin: auto
+
+@media screen and (max-width: 768px)
+   html
+      font-size: 8px
+   .header
+      .logo
+         margin-top: 2rem
+
+@media screen and (max-width: 576px)
+   .btn
+      padding: 1.4rem 1.9rem
+      font-size: 1.2rem
+   .header
+      &__contacts
+         margin-bottom: 3.4rem
+         width: 100%
+         display: flex
+         justify-content: space-between
+         &-phone
+            font-size: 1.9rem
+      &__content
+         padding-top: 4.6rem
+      &__title
+         font-size: 2.8rem
+         margin-bottom: 3rem
+      &__subtitle
+         font-size: 1.9rem
+         margin-bottom: 3rem
+      &__pricetag
+         margin-bottom: 2.3rem
+      &__payment
+         line-height: 1
+         margin-bottom: 2.3rem
+      &__form
+         padding: 4rem
+         &-wrap
+            padding-top: 0
