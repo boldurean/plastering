@@ -1,0 +1,44 @@
+
+*, *:before, *:after
+   box-sizing: border-box
+
+
+html
+   font-size: 10px
+
+body
+   +proximaReg
+
+a
+   text-decoration: none
+
+.light
+   color: $light
+
+.dark
+   color: $dark
+
+.primary
+   color: $primary
+
+.secondary
+   color: $secondary
+
+.btn
+   +proximaReg
+   color: $light
+   text-transform: uppercase
+   padding: 1.9rem 2.7rem
+   border: solid 1px #ffba15
+   border-radius: 8px
+   cursor: pointer
+   &-primary
+      box-shadow: 0 8px 13px 0 rgba(0, 0, 0, 0.04)
+      background: linear-gradient(to top, #d89800, #ffc843)
+      font-size: 12px
+      font-weight: 600
+      &:hover
+         background: linear-gradient(to bottom, #d89800, #ffc843)
+
+
+
