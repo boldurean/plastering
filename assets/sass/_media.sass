@@ -25,6 +25,35 @@
             margin: 0 auto
       &__workdays
          margin: auto
+   .price
+      padding-top: 4rem
+      &__heading
+         flex-direction: column
+         align-items: center
+         &-button
+            display: none
+      &__title
+         margin-bottom: 2rem
+      &__subtitle
+         margin-bottom: 2.6rem
+      &__row
+         flex-direction: column
+         align-items: center
+      &__column
+         padding: 5%
+         margin: 0
+         max-width: 100%
+         flex-basis: 100%
+         min-height: auto
+         &+&
+            margin: 2rem 0 0
+         &-list
+            display: none
+      .ul-button
+         display: block
+   .show-list
+      display: block
+
 
 @media screen and (max-width: 768px)
    html
@@ -32,11 +61,28 @@
    .header
       .logo
          margin-top: 2rem
+   .section
+      padding-top: 5rem
+      padding-bottom: 8rem
+      &__title
+         font-size: 24px
+         margin: 0
+         margin-bottom: 5rem
+         padding-bottom: 5rem
+   .price
+      &__title
+         font-size: 24px
+      &__subtitle
+         font-size: 18px
+      &__column
+         &-title
+            margin-bottom: 5%
+            min-height: unset
+         &-list
+            margin-bottom: 2.4rem
 
 @media screen and (max-width: 576px)
-   .btn
-      padding: 1.4rem 1.9rem
-      font-size: 1.2rem
+
    .header
       &__contacts
          margin-bottom: 3.4rem
@@ -62,3 +108,9 @@
          padding: 4rem
          &-wrap
             padding-top: 0
+      .btn
+         padding: 1.4rem 1.9rem
+         font-size: 1.2rem
+
+//@media screen and (max-width: 576px)
+//

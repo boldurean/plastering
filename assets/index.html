@@ -14,10 +14,13 @@
       <link rel="manifest" href="../img/favicon/site.webmanifest">
 
       <!--Styles-->
+      <link rel="stylesheet" href="css/slick.css">
+      <link rel="stylesheet" href="css/slick-theme.css">
       <link rel="stylesheet" href="css/style.css">
 
       <!--Scripts-->
       <script src="js/lib/jquery-3.5.1.min.js" defer></script>
+      <script src="js/lib/slick.min.js" defer></script>
       <script src="js/script.js" defer></script>
 
    </head>
@@ -84,5 +87,109 @@
          </div>
       </header>
 
+      <!--main-->
+
+      <main class="main">
+
+         <!--advantage-->
+
+         <section class="section advantage">
+
+            <!--container-->
+
+            <div class="container advantage__container">
+
+               <h2 class="section__title advantage__title">Преимущества работы с нами</h2>
+
+               <!--advantage row-->
+
+               <div class="row advantage__row">
+                  <div class="advantage__column">
+                     <img src="img/advantage-1.png" alt="advantage icon" class="advantage__column-icon">
+                     <p class="advantage__column-title">Платите по факту</p>
+                     <span class="advantage__column-text">Вы оплачиваете выполненные работы только после их выполнения. Никаких скрытых доплат и промежуточных платежей.</span>
+                  </div>
+                  <div class="advantage__column">
+                     <img src="img/advantage-2.png" alt="advantage icon" class="advantage__column-icon">
+                     <p class="advantage__column-title">Заключаем договор</p>
+                     <span class="advantage__column-text">Перед началом работ заключаем договор на юридическое лицо. Вы можете быть уверены, что все обязательства будут выполнены.</span>
+                  </div>
+                  <div class="advantage__column">
+                     <img src="img/advantage-3.png" alt="advantage icon" class="advantage__column-icon">
+                     <p class="advantage__column-title">Точно в срок</p>
+                     <span class="advantage__column-text">Работаем строго по установленным срокам, которые прописаны в договоре. Если не успеваем, Вы платите меньше</span>
+                  </div>
+                  <div class="advantage__column">
+                     <img src="img/advantage-4.png" alt="advantage icon" class="advantage__column-icon">
+                     <p class="advantage__column-title">Экономите на материалах</p>
+                     <span class="advantage__column-text">Мы являемся структурным подразделением компании поставщика строительных смесей <span class="secondary">gicema.ru</span> и даём Вам самые выгодные цены.</span>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <!--price-->
+
+         <section class="section price">
+            <div class="container price__container">
+
+               <!--heading-->
+
+               <div class="price__heading">
+                  <div class="price__heading-column"></div>
+                  <div class="price__heading-column">
+                     <h2 class="price__title">Цены</h2>
+                     <p class="price__subtitle">Выберите вариант, который подходит Вам:</p>
+                  </div>
+                  <div class="price__heading-column">
+                     <button class="btn btn-primary price__heading-button">Рассчитать точую стоимость</button>
+                  </div>
+               </div>
+
+               <!--row & columns-->
+
+               <div class="price__row">
+                  <div class="price__column card">
+                     <h3 class="price__column-title">Штукатурка вашим материалом</h3>
+                     <img src="img/price-img-1.jpg" alt="price image" class="price__column-image">
+                     <span class="price__column-pricetag">от <strong>300</strong> руб/м<sup>2</sup></span>
+                     <button class="ul-button">Что входит в стоимость?</button>
+                     <ul class="price__column-list">
+                        <li>Проведение работ</li>
+                        <li>Уборка</li>
+                     </ul>
+                     <button class="btn btn-primary price__button">Заказать</button>
+                  </div>
+                  <div class="price__column card">
+                     <h3 class="price__column-title">Штукатурка под шпаклёвку</h3>
+                     <img src="img/price-img-2.jpg" alt="price image" class="price__column-image">
+                     <span class="price__column-pricetag">от <strong>530</strong> руб/м<sup>2</sup></span>
+                     <button class="ul-button">Что входит в стоимость?</button>
+                     <ul class="price__column-list">
+                        <li>Завоз материала и его подъём</li>
+                        <li>Проведение работ</li>
+                        <li>Уборка</li>
+                        <li>Гарантия 2 года</li>
+                     </ul>
+                     <button class="btn btn-primary price__button">Заказать</button>
+                  </div>
+                  <div class="price__column card">
+                     <h3 class="price__column-title">Штукатурка под обои</h3>
+                     <img src="img/price-img-3.jpg" alt="price image" class="price__column-image">
+                     <span class="price__column-pricetag">от <strong>560</strong> руб/м<sup>2</sup></span>
+                     <button class="ul-button">Что входит в стоимость?</button>
+                     <ul class="price__column-list">
+                        <li>Завоз материала и его подъём</li>
+                        <li>Проведение работ</li>
+                        <li>Уборка</li>
+                        <li>Гарантия 2 года</li>
+                        <li>Можно сразу клеить обои</li>
+                     </ul>
+                     <button class="btn btn-primary price__button">Заказать</button>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </main>
    </body>
 </html>
