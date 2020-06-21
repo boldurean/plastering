@@ -618,7 +618,7 @@ a {
     z-index: 10; }
 
 .price {
-  background: url("../img/section-price-bg.jpg") no-repeat center/cover; }
+  background-color: #005e00; }
   .price__row {
     display: flex;
     justify-content: space-between;
@@ -652,7 +652,8 @@ a {
       color: #1a1820; }
     .price__column-image {
       margin-bottom: 3.5rem;
-      max-width: 100%; }
+      max-width: 100%;
+      width: 300px; }
     .price__column-pricetag {
       font-family: 'Proxima Nova Rg', sans-serif;
       font-weight: 700;
@@ -666,7 +667,8 @@ a {
       margin-bottom: 3rem;
       padding: 0;
       list-style: none;
-      text-align: center; }
+      text-align: center;
+      transition: all 1000ms linear; }
       .price__column-list li {
         font-family: 'Proxima Nova Rg', sans-serif;
         font-weight: 400;
@@ -718,6 +720,7 @@ a {
     background: transparent;
     border: none;
     margin: 0 0 2.4rem 0;
+    transition: all 1000ms linear;
     display: none; }
 
 @media screen and (max-width: 992px) {

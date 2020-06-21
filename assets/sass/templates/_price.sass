@@ -1,5 +1,5 @@
 .price
-   background: url("../img/section-price-bg.jpg") no-repeat center / cover
+   background-color: #005e00
    &__row
       display: flex
       justify-content: space-between
@@ -34,6 +34,7 @@
       &-image
          margin-bottom: 3.5rem
          max-width: 100%
+         width: 300px
 
       &-pricetag
          +proximaBold
@@ -47,6 +48,7 @@
          padding: 0
          list-style: none
          text-align: center
+         transition: all 1000ms linear
          li
             +proximaReg
             font-size: 1.8rem
@@ -89,4 +91,5 @@
       background: transparent
       border: none
       margin: 0 0 2.4rem 0
+      transition: all 1000ms linear
       display: none
