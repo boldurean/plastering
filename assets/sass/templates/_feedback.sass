@@ -1,0 +1,83 @@
+.feedback
+   background: url("../img/feedback/feedback-bg.jpg") no-repeat center / cover
+   &-slider
+      padding: 4rem
+      box-shadow: 0 12px 18px 0 rgba(0, 0, 0, 0.11)
+      background-color: $light
+      position: relative
+      .slick-prev
+         position: absolute
+         background: $secondary url("../img/feedback/arrowPrev.svg") no-repeat center
+         background-size: 13px 20px
+         border: none
+         font-size: 0
+         width: 4rem
+         height: 5rem
+         top: 50%
+         left: -4rem
+         transform: translateY(-50%)
+         cursor: pointer
+      .slick-next
+         position: absolute
+         background: $secondary url("../img/feedback/arrowNext.svg") no-repeat center
+         background-size: 13px 20px
+         border: none
+         font-size: 0
+         width: 4rem
+         height: 5rem
+         top: 50%
+         right: -4rem
+         transform: translateY(-50%)
+         cursor: pointer
+
+   &__row
+      width: 100%
+      display: flex
+      justify-content: space-between
+      align-items: flex-start
+   &__column
+      max-width: 50%
+      flex-basis: 45%
+      .fotorama
+         &-item
+            max-width: 100%
+      p
+         font-size: 1.6rem
+         color: $text-color
+         &:first-child
+            margin-top: 0
+
+      .client
+         display: flex
+         align-items: center
+         margin-top: 4.7rem
+         margin-bottom: 3.2rem
+         img
+            width: 50px
+            height: 48px
+            border-radius: 50%
+            margin-right: 2rem
+         &__name
+            span
+               font-size: 1.4rem
+            p
+               +proximaBold
+               margin: 0
+               margin-top: 0.8rem
+   &__comment
+      position: relative
+      padding: 2rem
+      border: 2px solid #49bf15
+      &:before
+         content: ''
+         position: absolute
+         width: 2rem
+         height: 2rem
+         top: -2rem
+         left: 4rem
+         background-color: $light
+         border: 2px solid #49bf15
+         border-bottom: none
+         border-top-right-radius: 100%
+
+

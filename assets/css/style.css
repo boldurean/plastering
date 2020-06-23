@@ -636,7 +636,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 5rem 3%;
+    padding: 3%;
     max-width: 32%; }
     .price__column + .price__column {
       margin-left: 1rem; }
@@ -723,6 +723,86 @@ a {
     transition: all 1000ms linear;
     display: none; }
 
+.feedback {
+  background: url("../img/feedback/feedback-bg.jpg") no-repeat center/cover; }
+  .feedback-slider {
+    padding: 4rem;
+    box-shadow: 0 12px 18px 0 rgba(0, 0, 0, 0.11);
+    background-color: #ffffff;
+    position: relative; }
+    .feedback-slider .slick-prev {
+      position: absolute;
+      background: #70c849 url("../img/feedback/arrowPrev.svg") no-repeat center;
+      background-size: 13px 20px;
+      border: none;
+      font-size: 0;
+      width: 4rem;
+      height: 5rem;
+      top: 50%;
+      left: -4rem;
+      transform: translateY(-50%);
+      cursor: pointer; }
+    .feedback-slider .slick-next {
+      position: absolute;
+      background: #70c849 url("../img/feedback/arrowNext.svg") no-repeat center;
+      background-size: 13px 20px;
+      border: none;
+      font-size: 0;
+      width: 4rem;
+      height: 5rem;
+      top: 50%;
+      right: -4rem;
+      transform: translateY(-50%);
+      cursor: pointer; }
+  .feedback__row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; }
+  .feedback__column {
+    max-width: 50%;
+    flex-basis: 45%; }
+    .feedback__column .fotorama-item {
+      max-width: 100%; }
+    .feedback__column p {
+      font-size: 1.6rem;
+      color: #1a1820; }
+      .feedback__column p:first-child {
+        margin-top: 0; }
+    .feedback__column .client {
+      display: flex;
+      align-items: center;
+      margin-top: 4.7rem;
+      margin-bottom: 3.2rem; }
+      .feedback__column .client img {
+        width: 50px;
+        height: 48px;
+        border-radius: 50%;
+        margin-right: 2rem; }
+      .feedback__column .client__name span {
+        font-size: 1.4rem; }
+      .feedback__column .client__name p {
+        font-family: 'Proxima Nova Rg', sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        margin: 0;
+        margin-top: 0.8rem; }
+  .feedback__comment {
+    position: relative;
+    padding: 2rem;
+    border: 2px solid #49bf15; }
+    .feedback__comment:before {
+      content: '';
+      position: absolute;
+      width: 2rem;
+      height: 2rem;
+      top: -2rem;
+      left: 4rem;
+      background-color: #ffffff;
+      border: 2px solid #49bf15;
+      border-bottom: none;
+      border-top-right-radius: 100%; }
+
 @media screen and (max-width: 992px) {
   .header {
     background-position: top left; }
@@ -774,7 +854,14 @@ a {
     .price .ul-button {
       display: block; }
   .show-list {
-    display: block; } }
+    display: block; }
+  .feedback__row {
+    flex-direction: column;
+    align-items: center; }
+  .feedback__column {
+    max-width: 100%; }
+    .feedback__column .fotorama {
+      margin-bottom: 3rem; } }
 
 @media screen and (max-width: 768px) {
   html {
@@ -797,7 +884,24 @@ a {
     margin-bottom: 5%;
     min-height: unset; }
   .price__column-list {
-    margin-bottom: 2.4rem; } }
+    margin-bottom: 2.4rem; }
+  .feedback-slider .slick-prev {
+    left: 0; }
+  .feedback-slider .slick-next {
+    right: 0; }
+  .feedback-slider .slick-dots {
+    position: static;
+    margin-top: 3rem;
+    margin-bottom: -10rem; }
+    .feedback-slider .slick-dots li button {
+      width: 10px;
+      height: 10px;
+      background: #c7c9c6;
+      border-radius: 50%; }
+      .feedback-slider .slick-dots li button:before {
+        display: none; }
+    .feedback-slider .slick-dots .slick-active button {
+      background: #70c849; } }
 
 @media screen and (max-width: 576px) {
   .header__contacts {
@@ -826,4 +930,7 @@ a {
       padding-top: 0; }
   .header .btn {
     padding: 1.4rem 1.9rem;
-    font-size: 1.2rem; } }
+    font-size: 1.2rem; }
+  .feedback-slider {
+    padding: 4%;
+    padding-bottom: 4rem; } }

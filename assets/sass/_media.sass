@@ -49,13 +49,18 @@
             margin: 2rem 0 0
          &-list
             display: none
-
       .ul-button
          display: block
-
    .show-list
       display: block
-
+   .feedback
+      &__row
+         flex-direction: column
+         align-items: center
+      &__column
+         max-width: 100%
+         .fotorama
+            margin-bottom: 3rem
 
 
 @media screen and (max-width: 768px)
@@ -83,6 +88,29 @@
             min-height: unset
          &-list
             margin-bottom: 2.4rem
+   .feedback
+      &-slider
+         .slick
+            &-prev
+               left: 0
+            &-next
+               right: 0
+            &-dots
+               position: static
+               margin-top: 3rem
+               margin-bottom: -10rem
+               li
+                  button
+                     width: 10px
+                     height: 10px
+                     background: #c7c9c6
+                     border-radius: 50%
+                     &:before
+                        display: none
+               .slick-active
+                  button
+                     background: $secondary
+
 
 @media screen and (max-width: 576px)
 
@@ -114,6 +142,10 @@
       .btn
          padding: 1.4rem 1.9rem
          font-size: 1.2rem
+   .feedback
+      &-slider
+         padding: 4%
+         padding-bottom: 4rem
 
 //@media screen and (max-width: 576px)
 //

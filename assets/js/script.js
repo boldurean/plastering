@@ -50,6 +50,22 @@ $(document).ready(function(){
         ]
     });
 
+    $('.feedback-slider').slick({
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    appendArrows: false,
+                    dots: true
+                }
+            }
+        ]
+    });
+
+    //fotorama
+
+
+
     $('.ul-button').on('click', function () {
         $(this).hide();
         $(this).next().addClass('show-list');
