@@ -5,6 +5,7 @@
       box-shadow: 0 12px 18px 0 rgba(0, 0, 0, 0.11)
       background-color: $light
       position: relative
+      margin-bottom: 6rem
       .slick-prev
          position: absolute
          background: $secondary url("../img/feedback/arrowPrev.svg") no-repeat center
@@ -79,5 +80,40 @@
          border: 2px solid #49bf15
          border-bottom: none
          border-top-right-radius: 100%
+
+
+   &__form
+      position: relative
+      margin: 0 auto
+      max-width: 82.1rem
+      padding: 5rem 13.6rem
+      display: flex
+      flex-wrap: wrap
+      flex-direction: column
+      align-items: center
+      background-color: $light
+      &-title
+         font-size: 2.2rem
+         color: $text-color
+         text-align: center
+         display: block
+         flex-basis: 100%
+      &-input
+         &--wrap
+            display: flex
+      &-button
+         min-width: 25.7rem
+      &-image
+         position: absolute
+         bottom: -9rem
+         left: -33rem
+
+      fieldset
+         margin-bottom: 3rem
+         min-width: 25.6rem
+      fieldset + fieldset
+         margin-left: 3.3rem
+
+
 
 

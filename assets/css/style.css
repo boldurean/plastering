@@ -400,6 +400,38 @@ a {
     font-size: 3.6rem;
     color: #1a1820; }
 
+.form-title {
+  text-align: center; }
+
+.form-input {
+  vertical-align: middle;
+  width: 100%;
+  border: none;
+  outline: none;
+  line-height: 3rem;
+  font-size: 1.8rem; }
+
+.form-button {
+  font-family: 'Proxima Nova Lt', sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  padding: 2.2rem 4.4rem;
+  font-size: 1.6rem; }
+
+.form fieldset {
+  height: 6.2rem;
+  border-radius: 5px;
+  border: solid 1px #dddddd;
+  margin-bottom: 2rem; }
+
+.form legend {
+  font-family: 'Proxima Nova Rg', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.3rem;
+  text-align: center;
+  color: #565656; }
+
 .header {
   padding-top: 15px;
   padding-bottom: 4rem;
@@ -521,7 +553,6 @@ a {
       font-style: normal;
       font-size: 1.8rem;
       max-width: 25.5rem;
-      text-align: center;
       color: #292929; }
     .header__form-input {
       vertical-align: middle;
@@ -729,7 +760,8 @@ a {
     padding: 4rem;
     box-shadow: 0 12px 18px 0 rgba(0, 0, 0, 0.11);
     background-color: #ffffff;
-    position: relative; }
+    position: relative;
+    margin-bottom: 6rem; }
     .feedback-slider .slick-prev {
       position: absolute;
       background: #70c849 url("../img/feedback/arrowPrev.svg") no-repeat center;
@@ -802,6 +834,35 @@ a {
       border: 2px solid #49bf15;
       border-bottom: none;
       border-top-right-radius: 100%; }
+  .feedback__form {
+    position: relative;
+    margin: 0 auto;
+    max-width: 82.1rem;
+    padding: 5rem 13.6rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff; }
+    .feedback__form-title {
+      font-size: 2.2rem;
+      color: #1a1820;
+      text-align: center;
+      display: block;
+      flex-basis: 100%; }
+    .feedback__form-input--wrap {
+      display: flex; }
+    .feedback__form-button {
+      min-width: 25.7rem; }
+    .feedback__form-image {
+      position: absolute;
+      bottom: -9rem;
+      left: -33rem; }
+    .feedback__form fieldset {
+      margin-bottom: 3rem;
+      min-width: 25.6rem; }
+    .feedback__form fieldset + fieldset {
+      margin-left: 3.3rem; }
 
 @media screen and (max-width: 992px) {
   .header {
