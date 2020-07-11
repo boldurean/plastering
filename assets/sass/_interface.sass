@@ -41,15 +41,24 @@ a
       &:hover
          background: linear-gradient(to bottom, #d89800, #ffc843)
 
+.row
+   display: flex
+
 .section
    padding-top: 10rem
    padding-bottom: 10rem
    &__title
+      margin: 0
       +proximaBold
-      padding-bottom: 13rem
       text-align: center
       font-size: 3.6rem
       color: $text-color
+   &__subtitle
+      margin: 0
+      +proximaBold
+      text-align: center
+      color: $text-color
+
 
 
 .form

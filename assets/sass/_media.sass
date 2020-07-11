@@ -1,5 +1,10 @@
-
 //max width
+@media screen and (max-width: 1600px)
+   .structure
+      background-size: 60%
+
+      background-position: bottom right -40%
+
 @media screen and (max-width: 1200px)
    .feedback
       &__form
@@ -9,51 +14,66 @@
 @media screen and (max-width: 992px)
    .header
       background-position: top left
+
       &__container
          flex-wrap: wrap
+
       .logo
          margin-top: 3rem
          justify-content: center
          flex-basis: 100%
          order: 3
+
       &__contacts
          margin: 0 auto
          justify-content: center
+
       &__content
          flex-direction: column
          align-items: center
          text-align: center
+
          &-text
             display: flex
             flex-direction: column
             align-items: center
             margin: 0 auto
+
       &__workdays
          margin: auto
    .price
       padding-top: 4rem
+
       &__heading
          flex-direction: column
          align-items: center
+
          &-button
             display: none
+
       &__title
          margin-bottom: 2rem
+
       &__subtitle
          margin-bottom: 2.6rem
+
       &__row
          flex-direction: column
          align-items: center
+
       &__column
          padding: 5%
          margin: 0
          max-width: 100%
          flex-basis: 100%
          min-height: auto
-         &+&
+
+         & + &
             margin: 2rem 0 0
+
          &-list
             display: none
+
       .ul-button
          display: block
    .show-list
@@ -62,10 +82,13 @@
       &__row
          flex-direction: column
          align-items: center
+
       &__column
          max-width: 100%
+
          .fotorama
             margin-bottom: 3rem
+
       &__form
          padding: 5%
 
@@ -79,6 +102,7 @@
    .section
       padding-top: 5rem
       padding-bottom: 8rem
+
       &__title
          font-size: 24px
          margin: 0
@@ -87,44 +111,76 @@
    .price
       &__title
          font-size: 24px
+
       &__subtitle
          font-size: 18px
+
       &__column
          &-title
             margin-bottom: 5%
             min-height: unset
+
          &-list
             margin-bottom: 2.4rem
    .feedback
       &-slider
          .slick
-            &-prev
-               left: 0
-            &-next
-               right: 0
-            &-dots
-               position: static
-               margin-top: 3rem
-               margin-bottom: -10rem
-               li
-                  button
-                     width: 10px
-                     height: 10px
-                     background: #c7c9c6
-                     border-radius: 50%
-                     &:before
-                        display: none
-               .slick-active
-                  button
-                     background: $secondary
+         &-prev
+            left: 0
+
+         &-next
+            right: 0
+
+         &-dots
+            position: static
+            margin-top: 3rem
+            margin-bottom: -10rem
+
+            li
+               button
+                  width: 10px
+                  height: 10px
+                  background: #c7c9c6
+                  border-radius: 50%
+
+                  &:before
+                     display: none
+
+            .slick-active
+               button
+                  background: $secondary
+
       &__form
          margin-top: 8rem
+
          fieldset + fieldset
             margin-left: unset
+
          &-input
             width: 100%
+
             &--wrap
                flex-direction: column
+   .structure
+      &__title
+         padding-bottom: 0
+
+      &__subtitle
+         margin-bottom: 0
+
+      &__row
+         flex-direction: column
+         align-items: center
+
+      &__column
+         margin-right: 0
+         align-items: center
+         text-align: center
+         margin-bottom: 6rem
+
+         &-title
+            min-height: unset
+            margin-bottom: 2rem
 
 @media screen and (max-width: 576px)
 
@@ -134,25 +190,34 @@
          width: 100%
          display: flex
          justify-content: space-between
+
          &-phone
             font-size: 1.9rem
+
       &__content
          padding-top: 4.6rem
+
       &__title
          font-size: 2.8rem
          margin-bottom: 3rem
+
       &__subtitle
          font-size: 1.9rem
          margin-bottom: 3rem
+
       &__pricetag
          margin-bottom: 2.3rem
+
       &__payment
          line-height: 1
          margin-bottom: 2.3rem
+
       &__form
          padding: 4rem
+
          &-wrap
             padding-top: 0
+
       .btn
          padding: 1.4rem 1.9rem
          font-size: 1.2rem

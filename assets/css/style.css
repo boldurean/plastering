@@ -388,16 +388,26 @@ a {
     .btn-primary:hover {
       background: linear-gradient(to bottom, #d89800, #ffc843); }
 
+.row {
+  display: flex; }
+
 .section {
   padding-top: 10rem;
   padding-bottom: 10rem; }
   .section__title {
+    margin: 0;
     font-family: 'Proxima Nova Rg', sans-serif;
     font-weight: 700;
     font-style: normal;
-    padding-bottom: 13rem;
     text-align: center;
     font-size: 3.6rem;
+    color: #1a1820; }
+  .section__subtitle {
+    margin: 0;
+    font-family: 'Proxima Nova Rg', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
     color: #1a1820; }
 
 .form-title {
@@ -619,6 +629,9 @@ a {
     font-style: normal;
     font-size: 1.6rem; }
 
+.advantage__title {
+  margin-bottom: 13rem; }
+
 .advantage .slick-slide {
   padding: 0 1rem;
   position: relative; }
@@ -759,6 +772,8 @@ a {
 
 .feedback {
   background: url("../img/feedback/feedback-bg.jpg") no-repeat center/cover; }
+  .feedback__title {
+    margin-bottom: 10rem; }
   .feedback-slider {
     padding: 4rem;
     box-shadow: 0 12px 18px 0 rgba(0, 0, 0, 0.11);
@@ -867,6 +882,51 @@ a {
     .feedback__form fieldset + fieldset {
       margin-left: 3.3rem; }
 
+.structure {
+  background: transparent url("../img/structure/smoothing-hand.jpg") no-repeat bottom right; }
+  .structure__title {
+    font-family: 'Proxima Nova Rg', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 3.6rem;
+    margin-bottom: 4.9rem; }
+  .structure__subtitle {
+    font-family: 'Proxima Nova Rg', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.6rem;
+    margin-bottom: 6.5rem; }
+  .structure__row {
+    align-items: flex-start;
+    flex-wrap: wrap; }
+  .structure__column {
+    margin-right: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-basis: 30%;
+    margin-top: 6rem; }
+    .structure__column-icon--wrap {
+      height: 100px; }
+    .structure__column-title {
+      min-height: 5rem;
+      font-family: 'Proxima Nova Rg', sans-serif;
+      font-weight: 700;
+      font-style: normal;
+      font-size: 2.2rem; }
+    .structure__column-text {
+      max-width: 30rem;
+      font-family: 'Proxima Nova Rg', sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 1.7rem; }
+
+@media screen and (max-width: 1600px) {
+  .structure {
+    background-size: 60%;
+    background-position: bottom right -40%; } }
+
 @media screen and (max-width: 1200px) {
   .feedback__form-image {
     display: none; } }
@@ -955,22 +1015,22 @@ a {
     min-height: unset; }
   .price__column-list {
     margin-bottom: 2.4rem; }
-  .feedback-slider .slick-prev {
+  .feedback-slider-prev {
     left: 0; }
-  .feedback-slider .slick-next {
+  .feedback-slider-next {
     right: 0; }
-  .feedback-slider .slick-dots {
+  .feedback-slider-dots {
     position: static;
     margin-top: 3rem;
     margin-bottom: -10rem; }
-    .feedback-slider .slick-dots li button {
+    .feedback-slider-dots li button {
       width: 10px;
       height: 10px;
       background: #c7c9c6;
       border-radius: 50%; }
-      .feedback-slider .slick-dots li button:before {
+      .feedback-slider-dots li button:before {
         display: none; }
-    .feedback-slider .slick-dots .slick-active button {
+    .feedback-slider-dots .slick-active button {
       background: #70c849; }
   .feedback__form {
     margin-top: 8rem; }
@@ -979,7 +1039,22 @@ a {
     .feedback__form-input {
       width: 100%; }
       .feedback__form-input--wrap {
-        flex-direction: column; } }
+        flex-direction: column; }
+  .structure__title {
+    padding-bottom: 0; }
+  .structure__subtitle {
+    margin-bottom: 0; }
+  .structure__row {
+    flex-direction: column;
+    align-items: center; }
+  .structure__column {
+    margin-right: 0;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 6rem; }
+    .structure__column-title {
+      min-height: unset;
+      margin-bottom: 2rem; } }
 
 @media screen and (max-width: 576px) {
   .header__contacts {
