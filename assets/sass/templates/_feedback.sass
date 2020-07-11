@@ -1,11 +1,13 @@
 .feedback
    background: url("../img/feedback/feedback-bg.jpg") no-repeat center / cover
+
    &-slider
       padding: 4rem
       box-shadow: 0 12px 18px 0 rgba(0, 0, 0, 0.11)
       background-color: $light
       position: relative
       margin-bottom: 6rem
+
       .slick-prev
          position: absolute
          background: $secondary url("../img/feedback/arrowPrev.svg") no-repeat center
@@ -18,6 +20,7 @@
          left: -4rem
          transform: translateY(-50%)
          cursor: pointer
+
       .slick-next
          position: absolute
          background: $secondary url("../img/feedback/arrowNext.svg") no-repeat center
@@ -36,15 +39,19 @@
       display: flex
       justify-content: space-between
       align-items: flex-start
+
    &__column
       max-width: 50%
       flex-basis: 45%
+
       .fotorama
          &-item
             max-width: 100%
+
       p
          font-size: 1.6rem
          color: $text-color
+
          &:first-child
             margin-top: 0
 
@@ -53,22 +60,27 @@
          align-items: center
          margin-top: 4.7rem
          margin-bottom: 3.2rem
+
          img
             width: 50px
             height: 48px
             border-radius: 50%
             margin-right: 2rem
+
          &__name
             span
                font-size: 1.4rem
+
             p
                +proximaBold
                margin: 0
                margin-top: 0.8rem
+
    &__comment
       position: relative
       padding: 2rem
       border: 2px solid #49bf15
+
       &:before
          content: ''
          position: absolute
@@ -92,17 +104,21 @@
       flex-direction: column
       align-items: center
       background-color: $light
+
       &-title
          font-size: 2.2rem
          color: $text-color
          text-align: center
          display: block
          flex-basis: 100%
+
       &-input
          &--wrap
             display: flex
+
       &-button
          min-width: 25.7rem
+
       &-image
          position: absolute
          bottom: -9rem
@@ -111,6 +127,7 @@
       fieldset
          margin-bottom: 3rem
          min-width: 25.6rem
+
       fieldset + fieldset
          margin-left: 3.3rem
 

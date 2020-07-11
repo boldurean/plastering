@@ -1,5 +1,10 @@
 
 //max width
+@media screen and (max-width: 1200px)
+   .feedback
+      &__form
+         &-image
+            display: none
 
 @media screen and (max-width: 992px)
    .header
@@ -61,6 +66,8 @@
          max-width: 100%
          .fotorama
             margin-bottom: 3rem
+      &__form
+         padding: 5%
 
 
 @media screen and (max-width: 768px)
@@ -110,7 +117,14 @@
                .slick-active
                   button
                      background: $secondary
-
+      &__form
+         margin-top: 8rem
+         fieldset + fieldset
+            margin-left: unset
+         &-input
+            width: 100%
+            &--wrap
+               flex-direction: column
 
 @media screen and (max-width: 576px)
 

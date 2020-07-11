@@ -619,34 +619,37 @@ a {
     font-style: normal;
     font-size: 1.6rem; }
 
-.advantage .slick {
+.advantage .slick-slide {
+  padding: 0 1rem;
   position: relative; }
-  .advantage .slick-slide {
-    padding: 0 1rem; }
-  .advantage .slick-active {
-    outline: none; }
-  .advantage .slick-track {
-    margin: auto;
-    display: flex;
-    justify-content: center; }
-  .advantage .slick-prev {
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 0;
-    border: none;
-    background: url("../img/arrow-prev.png") no-repeat center;
-    z-index: 10; }
-  .advantage .slick-next {
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 0;
-    border: none;
-    background: url("../img/arrow-next.png") no-repeat center;
-    z-index: 10; }
+
+.advantage .slick-active {
+  outline: none; }
+
+.advantage .slick-track {
+  margin: auto;
+  display: flex;
+  justify-content: center; }
+
+.advantage .slick-prev {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0;
+  border: none;
+  background: url("../img/arrow-prev.png") no-repeat center;
+  z-index: 10; }
+
+.advantage .slick-next {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0;
+  border: none;
+  background: url("../img/arrow-next.png") no-repeat center;
+  z-index: 10; }
 
 .price {
   background-color: #005e00; }
@@ -864,6 +867,10 @@ a {
     .feedback__form fieldset + fieldset {
       margin-left: 3.3rem; }
 
+@media screen and (max-width: 1200px) {
+  .feedback__form-image {
+    display: none; } }
+
 @media screen and (max-width: 992px) {
   .header {
     background-position: top left; }
@@ -922,7 +929,9 @@ a {
   .feedback__column {
     max-width: 100%; }
     .feedback__column .fotorama {
-      margin-bottom: 3rem; } }
+      margin-bottom: 3rem; }
+  .feedback__form {
+    padding: 5%; } }
 
 @media screen and (max-width: 768px) {
   html {
@@ -962,7 +971,15 @@ a {
       .feedback-slider .slick-dots li button:before {
         display: none; }
     .feedback-slider .slick-dots .slick-active button {
-      background: #70c849; } }
+      background: #70c849; }
+  .feedback__form {
+    margin-top: 8rem; }
+    .feedback__form fieldset + fieldset {
+      margin-left: unset; }
+    .feedback__form-input {
+      width: 100%; }
+      .feedback__form-input--wrap {
+        flex-direction: column; } }
 
 @media screen and (max-width: 576px) {
   .header__contacts {
