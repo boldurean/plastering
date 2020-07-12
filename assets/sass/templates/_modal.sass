@@ -1,0 +1,31 @@
+.modal
+   position: fixed
+   z-index: 199
+   opacity: 0
+   visibility: hidden
+   top: 0
+   right: 0
+   bottom: 0
+   left: 0
+   width: 100%
+   height: 100%
+   background-color: rgba($dark, 0.6)
+   display: flex
+   justify-content: center
+   align-items: center
+
+   &__dialog
+      display: flex
+      justify-content: center
+      align-items: center
+      flex-direction: column
+      position: relative
+      max-width: 50rem
+      padding: 3rem 3rem
+      color: $dark
+      background: #f7f4f2
+      background-size: cover
+
+.active
+   opacity: 1
+   visibility: visible

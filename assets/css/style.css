@@ -1234,6 +1234,121 @@ a {
       font-size: 0;
       cursor: pointer; }
 
+.workinfo {
+  background: url("../img/workinfo/workinfo-bg.jpg") no-repeat center/cover; }
+  .workinfo__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .workinfo__column:first-of-type {
+    width: 50%; }
+  .workinfo__title {
+    width: 38.2rem;
+    font-family: 'Proxima Nova Rg', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 4rem;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.45;
+    letter-spacing: normal;
+    text-align: left;
+    color: #292929;
+    text-transform: uppercase;
+    margin-top: 0; }
+  .workinfo__subtitle {
+    width: 50.5rem;
+    font-size: 2.4rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #292929; }
+  .workinfo__form {
+    margin-bottom: 3.4rem;
+    max-width: 35.5rem;
+    width: 35.5rem;
+    max-height: 41rem;
+    padding: 4.3rem 5rem;
+    background-color: #ffffff;
+    text-align: center; }
+    .workinfo__form-title {
+      max-width: 24.4rem;
+      margin: 0 0 3rem 0;
+      font-family: 'Proxima Nova Rg', sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 1.8rem;
+      color: #292929; }
+    .workinfo__form-input {
+      vertical-align: middle;
+      width: 100%;
+      border: none;
+      outline: none;
+      line-height: 3rem;
+      font-size: 1.8rem; }
+    .workinfo__form fieldset {
+      height: 6.2rem;
+      border-radius: 5px;
+      border: solid 1px #dddddd;
+      margin-bottom: 2rem; }
+    .workinfo__form legend {
+      font-family: 'Proxima Nova Rg', sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 1.3rem;
+      text-align: center;
+      color: #565656; }
+    .workinfo__form-button {
+      font-family: 'Proxima Nova Lt', sans-serif;
+      font-weight: 600;
+      font-style: normal;
+      padding: 2.2rem 2.5rem;
+      font-size: 1.4rem;
+      width: 100%;
+      margin-bottom: 1.5rem; }
+    .workinfo__form-text {
+      margin: 0;
+      font-family: 'Proxima Nova Rg', sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 1.2rem;
+      color: #565656;
+      text-align: center; }
+
+.modal {
+  position: fixed;
+  z-index: 199;
+  opacity: 0;
+  visibility: hidden;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .modal__dialog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    max-width: 50rem;
+    padding: 3rem 3rem;
+    color: #000000;
+    background: #f7f4f2;
+    background-size: cover; }
+
+.active {
+  opacity: 1;
+  visibility: visible; }
+
 @media screen and (max-width: 1700px) {
   .structure {
     background-size: 60%;
@@ -1321,7 +1436,28 @@ a {
   .package__row {
     justify-content: center; }
   .package__column {
-    flex-basis: 40%; } }
+    flex-basis: 40%; }
+  .workinfo {
+    padding-bottom: 2rem;
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: cover; }
+    .workinfo__row {
+      flex-direction: column; }
+    .workinfo__column {
+      max-width: 35.5rem; }
+      .workinfo__column:first-of-type {
+        width: 100%; }
+    .workinfo__title {
+      max-width: 34rem;
+      text-align: center;
+      font-size: 3rem; }
+    .workinfo__subtitle {
+      text-align: center;
+      max-width: 34rem;
+      font-size: 1.8rem; }
+      .workinfo__subtitle:last-of-type {
+        margin-bottom: 4rem; } }
 
 @media screen and (max-width: 768px) {
   html {
@@ -1390,7 +1526,9 @@ a {
   .solutions__title {
     padding-bottom: 0; }
   .materials__title {
-    padding-bottom: 0; } }
+    padding-bottom: 0; }
+  .workinfo {
+    padding-bottom: 2rem; } }
 
 @media screen and (max-width: 576px) {
   .header__contacts {
