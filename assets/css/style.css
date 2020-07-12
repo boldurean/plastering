@@ -358,10 +358,6 @@ body {
 a {
   text-decoration: none; }
 
-a[href^="tel:"] {
-  text-decoration: none;
-  color: #70c849; }
-
 .light {
   color: #ffffff; }
 
@@ -811,6 +807,7 @@ a[href^="tel:"] {
     .feedback-slider .slick-dots {
       margin-bottom: -2rem; }
       .feedback-slider .slick-dots button {
+        margin: auto;
         width: 10px;
         height: 10px;
         border-radius: 50%;
