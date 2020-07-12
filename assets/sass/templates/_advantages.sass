@@ -4,6 +4,7 @@
       justify-content: space-between
       align-items: flex-start
       flex-wrap: wrap
+
    &__column
       display: flex
       flex-direction: column
@@ -11,17 +12,21 @@
       text-align: center
       flex-basis: 21%
       color: $text-color
+
       &-icon
          margin: auto auto 6.4rem
          height: 7rem
+
       &-title
          height: 4.6rem
          margin: 0 0 1.7rem 0
          +proximaBold
          font-size: 2rem
+
       &-text
          +proximaThin
          font-size: 1.6rem
+
    &__title
       margin-bottom: 13rem
 
@@ -29,12 +34,15 @@
       &-slide
          padding: 0 1rem
          position: relative
+
       &-active
          outline: none
+
       &-track
          margin: auto
          display: flex
          justify-content: center
+
       &-prev
          position: absolute
          left: 0
@@ -42,8 +50,10 @@
          transform: translateY(-50%)
          font-size: 0
          border: none
-         background: url("../img/arrow-prev.png") no-repeat center
+         background: url("../img/arrow-prev.svg") no-repeat center / cover
          z-index: 10
+         cursor: pointer
+
       &-next
          position: absolute
          right: 0
@@ -51,8 +61,9 @@
          transform: translateY(-50%)
          font-size: 0
          border: none
-         background: url("../img/arrow-next.png") no-repeat center
+         background: url("../img/arrow-next.svg") no-repeat center / cover
          z-index: 10
+         cursor: pointer
 
 
 

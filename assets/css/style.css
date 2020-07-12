@@ -651,8 +651,9 @@ a {
   transform: translateY(-50%);
   font-size: 0;
   border: none;
-  background: url("../img/arrow-prev.png") no-repeat center;
-  z-index: 10; }
+  background: url("../img/arrow-prev.svg") no-repeat center/cover;
+  z-index: 10;
+  cursor: pointer; }
 
 .advantage .slick-next {
   position: absolute;
@@ -661,8 +662,9 @@ a {
   transform: translateY(-50%);
   font-size: 0;
   border: none;
-  background: url("../img/arrow-next.png") no-repeat center;
-  z-index: 10; }
+  background: url("../img/arrow-next.svg") no-repeat center/cover;
+  z-index: 10;
+  cursor: pointer; }
 
 .price {
   background-color: #005e00; }
