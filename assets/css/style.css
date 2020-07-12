@@ -1137,7 +1137,8 @@ a {
   .solutions__image {
     display: none; }
   .solutions__column {
-    margin: auto; } }
+    margin: auto;
+    margin-bottom: 3rem; } }
 
 @media screen and (max-width: 1250px) {
   .package__row {
