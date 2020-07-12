@@ -1024,7 +1024,7 @@ a {
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
-    line-height: 0.5;
+    line-height: 1;
     letter-spacing: normal;
     color: #000000;
     margin-bottom: 8.6rem; }
@@ -1042,7 +1042,7 @@ a {
     width: 54.8rem;
     max-height: 38rem;
     height: 38rem;
-    margin-bottom: 2rem; }
+    margin-bottom: 3rem; }
     .solutions__column:last-child {
       border: 3px solid #358015; }
     .solutions__column-title {
@@ -1081,6 +1081,45 @@ a {
         margin-right: 2rem; }
       .solutions__column-list li + li {
         margin-top: 3rem; }
+  .solutions__mobile {
+    display: none; }
+  .solutions__subtitle {
+    font-family: 'Proxima Nova Rg', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    display: block;
+    font-size: 18px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 4rem; }
+  .solutions__question {
+    font-family: 'Proxima Nova Rg', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 13px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.38;
+    letter-spacing: normal;
+    text-align: left;
+    color: #010101; }
+  .solutions__answer {
+    padding: 2rem;
+    color: #009300;
+    border: solid 3px #009300; }
+    .solutions__answer p {
+      margin: 0;
+      margin-bottom: 1rem;
+      font-family: 'Proxima Nova Rg', sans-serif;
+      font-weight: 700;
+      font-style: normal;
+      font-size: 13px; }
+    .solutions__answer span {
+      font-size: 13px; }
   .solutions .problems .solutions__column-title {
     opacity: 0.5;
     color: rgba(49, 49, 49, 0.5); }
@@ -1239,7 +1278,9 @@ a {
     margin-bottom: 6rem; }
     .structure__column-title {
       min-height: unset;
-      margin-bottom: 2rem; } }
+      margin-bottom: 2rem; }
+  .solutions__title {
+    padding-bottom: 0; } }
 
 @media screen and (max-width: 576px) {
   .header__contacts {
@@ -1286,4 +1327,8 @@ a {
       flex-basis: 90%;
       margin-bottom: 4rem; }
       .package__column:last-child {
-        margin-bottom: 2rem; } }
+        margin-bottom: 2rem; }
+  .solutions__column {
+    display: none; }
+  .solutions__mobile {
+    display: block; } }

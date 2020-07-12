@@ -14,7 +14,7 @@
       font-weight: bold
       font-stretch: normal
       font-style: normal
-      line-height: 0.5
+      line-height: 1
       letter-spacing: normal
       color: #000000
       margin-bottom: 8.6rem
@@ -34,7 +34,7 @@
       width: 54.8rem
       max-height: 38rem
       height: 38rem
-      margin-bottom: 2rem
+      margin-bottom: 3rem
 
       &:last-child
          border: 3px solid #358015
@@ -76,6 +76,45 @@
          li + li
             margin-top: 3rem
 
+   &__mobile
+      display: none
+
+   &__subtitle
+      +proximaBold
+      display: block
+      font-size: 18px
+      font-stretch: normal
+      font-style: normal
+      line-height: 1
+      letter-spacing: normal
+      text-align: center
+      color: $dark
+      margin-bottom: 4rem
+
+   &__question
+      +proximaBold
+      font-size: 13px
+      font-stretch: normal
+      font-style: normal
+      line-height: 1.38
+      letter-spacing: normal
+      text-align: left
+      color: #010101
+
+   &__answer
+      padding: 2rem
+      color: #009300
+      border: solid 3px #009300
+
+      p
+         margin: 0
+         margin-bottom: 1rem
+         +proximaBold
+         font-size: 13px
+
+      span
+         font-size: 13px
+
 
    .problems
       .solutions__column-title
@@ -89,4 +128,5 @@
          img
             width: 18px
             height: 18px
+
 
