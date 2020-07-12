@@ -5,10 +5,10 @@
       margin-bottom: 10rem
 
    &-slider
+      position: relative
       padding: 4rem
       box-shadow: 0 12px 18px 0 rgba(0, 0, 0, 0.11)
       background-color: $light
-      position: relative
       margin-bottom: 6rem
 
       .slick-prev
@@ -38,7 +38,9 @@
          cursor: pointer
 
       .slick-dots
-         margin-bottom: -2rem
+         bottom: -5rem
+         left: 50%
+         transform: translateX(-50%)
 
          button
             margin: auto
