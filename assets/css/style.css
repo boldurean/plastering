@@ -358,6 +358,10 @@ body {
 a {
   text-decoration: none; }
 
+a[href^="tel:"] {
+  text-decoration: none;
+  color: #70c849; }
+
 .light {
   color: #ffffff; }
 

@@ -12,6 +12,10 @@ body
 a
    text-decoration: none
 
+a[href^="tel:"]
+   text-decoration: none
+   color: $secondary
+
 
 .light
    color: $light
@@ -33,11 +37,13 @@ a
    border: solid 1px #ffba15
    border-radius: 8px
    cursor: pointer
+
    &-primary
       box-shadow: 0 8px 13px 0 rgba(0, 0, 0, 0.04)
       background: linear-gradient(to top, #d89800, #ffc843)
       font-size: 12px
       font-weight: 600
+
       &:hover
          background: linear-gradient(to bottom, #d89800, #ffc843)
 
@@ -47,12 +53,14 @@ a
 .section
    padding-top: 10rem
    padding-bottom: 10rem
+
    &__title
       margin: 0
       +proximaBold
       text-align: center
       font-size: 3.6rem
       color: $text-color
+
    &__subtitle
       margin: 0
       +proximaBold
@@ -60,10 +68,10 @@ a
       color: $text-color
 
 
-
 .form
    &-title
       text-align: center
+
    &-input
       vertical-align: middle
       width: 100%
@@ -71,15 +79,18 @@ a
       outline: none
       line-height: 3rem
       font-size: 1.8rem
+
    &-button
       +proximaSemi
       padding: 2.2rem 4.4rem
       font-size: 1.6rem
+
    fieldset
       height: 6.2rem
       border-radius: 5px
       border: solid 1px #dddddd
       margin-bottom: 2rem
+
    legend
       +proximaReg
       font-size: 1.3rem
