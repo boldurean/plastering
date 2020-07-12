@@ -1,9 +1,23 @@
 //max width
-@media screen and (max-width: 1600px)
+@media screen and (max-width: 1700px)
    .structure
       background-size: 60%
 
       background-position: bottom right -40%
+
+@media screen and (max-width: 1400px)
+   .solutions
+      &__image
+         display: none
+
+@media screen and (max-width: 1250px)
+   .package
+      &__row
+         justify-content: flex-start
+         align-items: center
+
+      &__column
+         flex-basis: 30%
 
 @media screen and (max-width: 1200px)
    .feedback
@@ -91,6 +105,12 @@
 
       &__form
          padding: 5%
+   .package
+      &__row
+         justify-content: center
+
+      &__column
+         flex-basis: 40%
 
 
 @media screen and (max-width: 768px)
@@ -149,6 +169,9 @@
             .slick-active
                button
                   background: $secondary
+
+      &__callback
+         display: block
 
       &__form
          margin-top: 8rem
@@ -225,6 +248,26 @@
       &-slider
          padding: 4%
          padding-bottom: 4rem
+   .package
+      padding-bottom: 1rem
+
+      &__title
+         margin-bottom: 5rem
+         padding-bottom: 0
+
+      &__subtitle
+         margin-bottom: 3rem
+
+      &__row
+         justify-content: center
+         align-items: center
+
+      &__column
+         flex-basis: 90%
+         margin-bottom: 4rem
+
+         &:last-child
+            margin-bottom: 2rem
 
 //@media screen and (max-width: 576px)
 //

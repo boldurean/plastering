@@ -37,6 +37,23 @@
          transform: translateY(-50%)
          cursor: pointer
 
+      .slick-dots
+         margin-bottom: -2rem
+
+         button
+            width: 10px
+            height: 10px
+            border-radius: 50%
+            background-color: #c7c9c6
+
+            &:before
+               display: none
+
+         .slick-active
+            button
+               background-color: #358015
+
+
    &__row
       width: 100%
       display: flex
@@ -133,6 +150,14 @@
 
       fieldset + fieldset
          margin-left: 3.3rem
+
+   &__callback
+      display: none
+      margin-top: 3rem
+      +proximaReg
+      font-size: 1.2rem
+      color: #565656
+      text-align: center
 
 
 

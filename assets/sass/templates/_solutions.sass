@@ -1,0 +1,92 @@
+.solutions
+   position: relative
+   background-color: $light
+
+   &__image
+      position: absolute
+      left: 48%
+      bottom: 0
+      transform: translateX(-50%)
+
+   &__title
+      +proximaBold
+      font-size: 3.6rem
+      font-weight: bold
+      font-stretch: normal
+      font-style: normal
+      line-height: 0.5
+      letter-spacing: normal
+      color: #000000
+      margin-bottom: 8.6rem
+
+   &__row
+      justify-content: space-between
+      align-items: center
+      flex-wrap: wrap
+
+   &__column
+      margin: auto
+      display: flex
+      flex-direction: column
+      padding: 4.8rem
+      border: solid 3px #e8e8e8
+      max-width: 55rem
+      width: 54.8rem
+      max-height: 38rem
+      height: 38rem
+      margin-bottom: 2rem
+
+      &:last-child
+         border: 3px solid #358015
+
+      &-title
+         margin: 0
+         margin-bottom: 4rem
+         +proximaBold
+         font-size: 2.1rem
+         font-stretch: normal
+         font-style: normal
+         line-height: 0.86
+         letter-spacing: normal
+         text-align: left
+         color: $dark
+
+      &-list
+         list-style: none
+         padding: 0
+
+         li
+            display: flex
+            align-items: center
+            +proximaReg
+            font-size: 1.6rem
+            font-weight: normal
+            font-stretch: normal
+            font-style: normal
+            line-height: 1.13
+            letter-spacing: normal
+            text-align: left
+            color: #313131
+
+         img
+            width: 18px
+            height: 14px
+            margin-right: 2rem
+
+         li + li
+            margin-top: 3rem
+
+
+   .problems
+      .solutions__column-title
+         opacity: 0.5
+         color: rgba(49, 49, 49, 0.5)
+
+      li + li
+         margin-top: 4rem
+
+      li
+         img
+            width: 18px
+            height: 18px
+

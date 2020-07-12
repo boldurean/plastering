@@ -804,6 +804,17 @@ a {
       right: -4rem;
       transform: translateY(-50%);
       cursor: pointer; }
+    .feedback-slider .slick-dots {
+      margin-bottom: -2rem; }
+      .feedback-slider .slick-dots button {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #c7c9c6; }
+        .feedback-slider .slick-dots button:before {
+          display: none; }
+      .feedback-slider .slick-dots .slick-active button {
+        background-color: #358015; }
   .feedback__row {
     width: 100%;
     display: flex;
@@ -881,6 +892,15 @@ a {
       min-width: 25.6rem; }
     .feedback__form fieldset + fieldset {
       margin-left: 3.3rem; }
+  .feedback__callback {
+    display: none;
+    margin-top: 3rem;
+    font-family: 'Proxima Nova Rg', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2rem;
+    color: #565656;
+    text-align: center; }
 
 .structure {
   background: transparent url("../img/structure/smoothing-hand.jpg") no-repeat bottom right; }
@@ -922,10 +942,169 @@ a {
       font-style: normal;
       font-size: 1.7rem; }
 
-@media screen and (max-width: 1600px) {
+.package {
+  padding-bottom: 0;
+  background-color: #f5f5f5; }
+  .package__title {
+    margin-bottom: 4.9rem;
+    font-family: 'Proxima Nova Rg', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 4.8rem;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.38;
+    letter-spacing: normal;
+    text-align: center;
+    color: #358015; }
+  .package__subtitle {
+    font-family: 'Proxima Nova Rg', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.6rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.13;
+    letter-spacing: normal;
+    color: #1a1820;
+    margin-bottom: 10.2rem; }
+  .package__row {
+    justify-content: space-between;
+    flex-wrap: wrap; }
+  .package__column {
+    flex-basis: 23%;
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    margin-bottom: 9.8rem; }
+    .package__column-icon {
+      width: 50px;
+      height: 50px;
+      margin: 0 1.9rem; }
+    .package__column-text {
+      color: #000000; }
+    .package__column-title {
+      font-family: 'Proxima Nova Rg', sans-serif;
+      font-weight: 700;
+      font-style: normal;
+      font-size: 1.6rem;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.13;
+      letter-spacing: normal;
+      text-align: left;
+      margin: 0; }
+    .package__column-small {
+      font-family: 'Proxima Nova Th', sans-serif;
+      font-weight: 100;
+      font-style: normal;
+      font-size: 1.3rem;
+      font-weight: 300;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: left; }
+
+.solutions {
+  position: relative;
+  background-color: #ffffff; }
+  .solutions__image {
+    position: absolute;
+    left: 48%;
+    bottom: 0;
+    transform: translateX(-50%); }
+  .solutions__title {
+    font-family: 'Proxima Nova Rg', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 3.6rem;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.5;
+    letter-spacing: normal;
+    color: #000000;
+    margin-bottom: 8.6rem; }
+  .solutions__row {
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; }
+  .solutions__column {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 4.8rem;
+    border: solid 3px #e8e8e8;
+    max-width: 55rem;
+    width: 54.8rem;
+    max-height: 38rem;
+    height: 38rem;
+    margin-bottom: 2rem; }
+    .solutions__column:last-child {
+      border: 3px solid #358015; }
+    .solutions__column-title {
+      margin: 0;
+      margin-bottom: 4rem;
+      font-family: 'Proxima Nova Rg', sans-serif;
+      font-weight: 700;
+      font-style: normal;
+      font-size: 2.1rem;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 0.86;
+      letter-spacing: normal;
+      text-align: left;
+      color: #000000; }
+    .solutions__column-list {
+      list-style: none;
+      padding: 0; }
+      .solutions__column-list li {
+        display: flex;
+        align-items: center;
+        font-family: 'Proxima Nova Rg', sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 1.6rem;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.13;
+        letter-spacing: normal;
+        text-align: left;
+        color: #313131; }
+      .solutions__column-list img {
+        width: 18px;
+        height: 14px;
+        margin-right: 2rem; }
+      .solutions__column-list li + li {
+        margin-top: 3rem; }
+  .solutions .problems .solutions__column-title {
+    opacity: 0.5;
+    color: rgba(49, 49, 49, 0.5); }
+  .solutions .problems li + li {
+    margin-top: 4rem; }
+  .solutions .problems li img {
+    width: 18px;
+    height: 18px; }
+
+@media screen and (max-width: 1700px) {
   .structure {
     background-size: 60%;
     background-position: bottom right -40%; } }
+
+@media screen and (max-width: 1400px) {
+  .solutions__image {
+    display: none; } }
+
+@media screen and (max-width: 1250px) {
+  .package__row {
+    justify-content: flex-start;
+    align-items: center; }
+  .package__column {
+    flex-basis: 30%; } }
 
 @media screen and (max-width: 1200px) {
   .feedback__form-image {
@@ -991,7 +1170,11 @@ a {
     .feedback__column .fotorama {
       margin-bottom: 3rem; }
   .feedback__form {
-    padding: 5%; } }
+    padding: 5%; }
+  .package__row {
+    justify-content: center; }
+  .package__column {
+    flex-basis: 40%; } }
 
 @media screen and (max-width: 768px) {
   html {
@@ -1032,6 +1215,8 @@ a {
         display: none; }
     .feedback-slider-dots .slick-active button {
       background: #70c849; }
+  .feedback__callback {
+    display: block; }
   .feedback__form {
     margin-top: 8rem; }
     .feedback__form fieldset + fieldset {
@@ -1086,4 +1271,19 @@ a {
     font-size: 1.2rem; }
   .feedback-slider {
     padding: 4%;
-    padding-bottom: 4rem; } }
+    padding-bottom: 4rem; }
+  .package {
+    padding-bottom: 1rem; }
+    .package__title {
+      margin-bottom: 5rem;
+      padding-bottom: 0; }
+    .package__subtitle {
+      margin-bottom: 3rem; }
+    .package__row {
+      justify-content: center;
+      align-items: center; }
+    .package__column {
+      flex-basis: 90%;
+      margin-bottom: 4rem; }
+      .package__column:last-child {
+        margin-bottom: 2rem; } }
