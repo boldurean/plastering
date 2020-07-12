@@ -1033,7 +1033,6 @@ a {
     align-items: center;
     flex-wrap: wrap; }
   .solutions__column {
-    margin: auto;
     display: flex;
     flex-direction: column;
     padding: 4.8rem;
@@ -1136,7 +1135,9 @@ a {
 
 @media screen and (max-width: 1400px) {
   .solutions__image {
-    display: none; } }
+    display: none; }
+  .solutions__column {
+    margin: auto; } }
 
 @media screen and (max-width: 1250px) {
   .package__row {
