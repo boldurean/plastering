@@ -646,6 +646,8 @@ a {
 
 .advantage .slick-prev {
   position: absolute;
+  width: 13px;
+  height: 20px;
   left: 0;
   top: 50%;
   transform: translateY(-50%);
@@ -657,6 +659,8 @@ a {
 
 .advantage .slick-next {
   position: absolute;
+  width: 13px;
+  height: 20px;
   right: 0;
   top: 50%;
   transform: translateY(-50%);
