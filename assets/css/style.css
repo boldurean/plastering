@@ -370,6 +370,9 @@ a {
 .secondary {
   color: #70c849; }
 
+.strong {
+  font-weight: bold; }
+
 .btn {
   font-family: 'Proxima Nova Rg', sans-serif;
   font-weight: 400;
@@ -1137,6 +1140,100 @@ a {
     width: 18px;
     height: 18px; }
 
+.materials {
+  background: url("../img/feedback/feedback-bg.jpg") no-repeat center/cover; }
+  .materials__row {
+    justify-content: space-evenly; }
+  .materials__title {
+    margin-bottom: 4.9rem; }
+  .materials__subtitle {
+    font-family: 'Proxima Nova Rg', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.9rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.95;
+    letter-spacing: normal;
+    color: #000000;
+    margin-bottom: 6.9rem; }
+  .materials__column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end; }
+    .materials__column-image {
+      margin-bottom: 1.5rem; }
+    .materials__column-title {
+      font-family: 'Proxima Nova Rg', sans-serif;
+      font-weight: 700;
+      font-style: normal;
+      font-size: 2.2rem;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 0.82;
+      letter-spacing: normal;
+      color: #000000;
+      margin: 0 0 2.9rem; }
+    .materials__column-info {
+      font-family: 'Proxima Nova Rg', sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 1.9rem;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #000000;
+      margin-bottom: 2.7rem;
+      height: 46px; }
+    .materials__column-certificate {
+      font-family: 'Proxima Nova Rg', sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 1.6rem;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.13;
+      letter-spacing: normal;
+      color: #6ba253; }
+  .materials .slick-slider {
+    position: relative; }
+    .materials .slick-slider .slick-list {
+      width: 100%; }
+      .materials .slick-slider .slick-list .slick-track {
+        display: flex;
+        justify-content: space-between;
+        align-items: center; }
+        .materials .slick-slider .slick-list .slick-track .slick-slide {
+          flex-basis: 25%;
+          display: flex;
+          flex-direction: column;
+          align-items: center; }
+    .materials .slick-slider .slick-prev {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      background: transparent url("../img/materials/prev.svg") no-repeat center/cover;
+      width: 13px;
+      height: 20px;
+      border: none;
+      font-size: 0;
+      cursor: pointer; }
+    .materials .slick-slider .slick-next {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+      background: transparent url("../img/materials/next.svg") no-repeat center/cover;
+      width: 13px;
+      height: 20px;
+      border: none;
+      font-size: 0;
+      cursor: pointer; }
+
 @media screen and (max-width: 1700px) {
   .structure {
     background-size: 60%;
@@ -1291,6 +1388,8 @@ a {
       min-height: unset;
       margin-bottom: 2rem; }
   .solutions__title {
+    padding-bottom: 0; }
+  .materials__title {
     padding-bottom: 0; } }
 
 @media screen and (max-width: 576px) {
