@@ -443,7 +443,10 @@ a {
   font-style: normal;
   font-size: 1.3rem;
   text-align: center;
-  color: #565656; }
+  color: #565656;
+  background-color: #ffffff;
+  margin: 0 auto;
+  padding: 0 5px; }
 
 .slick-slide {
   outline: none; }
