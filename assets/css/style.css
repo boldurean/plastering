@@ -445,6 +445,9 @@ a {
   text-align: center;
   color: #565656; }
 
+.slick-slide {
+  outline: none; }
+
 .header {
   padding-top: 15px;
   padding-bottom: 4rem;
@@ -1320,7 +1323,7 @@ a {
 
 .modal {
   position: fixed;
-  z-index: 199;
+  z-index: 99;
   opacity: 0;
   visibility: hidden;
   top: 0;
@@ -1348,6 +1351,53 @@ a {
 .active {
   opacity: 1;
   visibility: visible; }
+
+.extra {
+  background-color: #286b0a; }
+  .extra__title {
+    font-family: 'Proxima Nova Rg', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 3.6rem;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    color: #fcfcfc;
+    margin-bottom: 4.9rem; }
+  .extra__subtitle {
+    font-family: 'Proxima Nova Rg', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.9rem;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    color: #fcfcfc;
+    margin-bottom: 7rem; }
+  .extra__row {
+    justify-content: space-between;
+    align-items: center; }
+  .extra__column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 32%; }
+    .extra__column-image {
+      margin: 0 0 3.1rem;
+      max-width: 100%; }
+    .extra__column-title {
+      font-family: 'Proxima Nova Rg', sans-serif;
+      font-weight: 700;
+      font-style: normal;
+      font-size: 2rem;
+      font-stretch: normal;
+      font-style: normal;
+      letter-spacing: normal;
+      color: #fcfcfc;
+      margin: 0 0 3.4rem; }
+    .extra__column-btn {
+      padding: 2rem 5rem;
+      font-size: 1.6rem; }
 
 @media screen and (max-width: 1700px) {
   .structure {
@@ -1457,7 +1507,12 @@ a {
       max-width: 34rem;
       font-size: 1.8rem; }
       .workinfo__subtitle:last-of-type {
-        margin-bottom: 4rem; } }
+        margin-bottom: 4rem; }
+  .extra__row {
+    flex-direction: column;
+    align-items: center; }
+  .extra__column + .extra__column {
+    margin-top: 4rem; } }
 
 @media screen and (max-width: 768px) {
   html {
@@ -1470,8 +1525,7 @@ a {
     .section__title {
       font-size: 24px;
       margin: 0;
-      margin-bottom: 5rem;
-      padding-bottom: 5rem; }
+      margin-bottom: 5rem; }
   .price__title {
     font-size: 24px; }
   .price__subtitle {
