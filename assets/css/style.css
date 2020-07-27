@@ -451,6 +451,31 @@ a {
 .slick-slide {
   outline: none; }
 
+.logo {
+  display: flex;
+  align-items: center; }
+  .logo__icon {
+    width: 70px;
+    height: 70px;
+    margin-right: 22px; }
+  .logo__text {
+    line-height: 1;
+    color: #292929; }
+    .logo__text-title {
+      font-family: 'Proxima Nova Lt', sans-serif;
+      font-weight: 600;
+      font-style: normal;
+      margin: 0 0 10px 0;
+      font-size: 20px; }
+    .logo__text-subtitle {
+      font-family: 'Proxima Nova Rg', sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 15px; }
+
+.invalid {
+  color: tomato; }
+
 .header {
   padding-top: 15px;
   padding-bottom: 4rem;
@@ -459,28 +484,6 @@ a {
     margin: 0 auto;
     display: flex;
     justify-content: space-between; }
-  .header .logo {
-    display: flex;
-    justify-content: space-between;
-    align-items: center; }
-    .header .logo__icon {
-      width: 70px;
-      height: 70px;
-      margin-right: 22px; }
-    .header .logo__text {
-      line-height: 1;
-      color: #292929; }
-      .header .logo__text-title {
-        font-family: 'Proxima Nova Lt', sans-serif;
-        font-weight: 600;
-        font-style: normal;
-        margin: 0 0 10px 0;
-        font-size: 20px; }
-      .header .logo__text-subtitle {
-        font-family: 'Proxima Nova Rg', sans-serif;
-        font-weight: 400;
-        font-style: normal;
-        font-size: 15px; }
   .header__contacts {
     display: flex;
     justify-content: space-between;
@@ -1345,11 +1348,64 @@ a {
     align-items: center;
     flex-direction: column;
     position: relative;
-    max-width: 50rem;
-    padding: 3rem 3rem;
+    max-width: 75rem;
+    padding: 6.5rem 8.5rem;
     color: #000000;
-    background: #f7f4f2;
-    background-size: cover; }
+    background-image: url("../img/workinfo/workinfo-bg.jpg"); }
+  .modal__form {
+    margin-bottom: 2rem;
+    max-width: 50rem;
+    max-height: 41rem;
+    padding: 4.3rem 5rem;
+    background-color: #ffffff; }
+    .modal__form-wrap {
+      padding-top: 1.3rem; }
+    .modal__form-title {
+      margin: 0 0 3rem 0;
+      font-family: 'Proxima Nova Rg', sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 1.8rem;
+      max-width: 100%;
+      color: #292929;
+      text-align: center;
+      line-height: 1.4; }
+    .modal__form-input {
+      vertical-align: middle;
+      width: 100%;
+      border: none;
+      outline: none;
+      line-height: 3rem;
+      font-size: 1.8rem; }
+    .modal__form fieldset {
+      height: 6.2rem;
+      border-radius: 5px;
+      border: solid 1px #dddddd;
+      margin-bottom: 2rem; }
+    .modal__form legend {
+      font-family: 'Proxima Nova Rg', sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 1.3rem;
+      text-align: center;
+      color: #565656; }
+    .modal__form-button {
+      font-family: 'Proxima Nova Lt', sans-serif;
+      font-weight: 600;
+      font-style: normal;
+      padding: 2.2rem 4.4rem;
+      font-size: 1.6rem;
+      width: 100%;
+      margin-bottom: 1.5rem; }
+  .modal__workdays {
+    font-size: 1.4rem; }
+  .modal__close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 25px;
+    height: 25px;
+    cursor: pointer; }
 
 .active {
   opacity: 1;
@@ -1402,6 +1458,90 @@ a {
       padding: 2rem 5rem;
       font-size: 1.6rem; }
 
+.contacts {
+  background: transparent url("../img/contacts/asdasdas.jpg") no-repeat center/cover; }
+  .contacts__container {
+    display: flex;
+    justify-content: center; }
+  .contacts__row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap; }
+  .contacts__col:first-child {
+    width: 61.7rem; }
+  .contacts__title {
+    font-size: 3.6em;
+    color: #292929; }
+  .contacts__address, .contacts__email, .contacts__number, .contacts__info {
+    font-size: 1.8rem; }
+  .contacts__number {
+    text-decoration: none;
+    color: #1a1820; }
+  .contacts__map {
+    max-width: 100%; }
+  .contacts__form {
+    margin-bottom: 2rem;
+    max-width: 35.5rem;
+    max-height: 58.7rem;
+    padding: 4.3rem 5rem;
+    background-color: #ffffff; }
+    .contacts__form-wrap {
+      padding-top: 1.3rem; }
+    .contacts__form-title {
+      margin: 0 0 3rem 0;
+      font-family: 'Proxima Nova Rg', sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 1.8rem;
+      max-width: 100%;
+      color: #292929;
+      text-align: center;
+      line-height: 1.4; }
+    .contacts__form-input {
+      vertical-align: middle;
+      width: 100%;
+      border: none;
+      outline: none;
+      line-height: 3rem;
+      font-size: 1.8rem; }
+    .contacts__form fieldset {
+      height: 6.2rem;
+      border-radius: 5px;
+      border: solid 1px #dddddd;
+      margin-bottom: 2rem; }
+    .contacts__form legend {
+      font-family: 'Proxima Nova Rg', sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 1.3rem;
+      text-align: center;
+      color: #565656; }
+    .contacts__form-button {
+      font-family: 'Proxima Nova Lt', sans-serif;
+      font-weight: 600;
+      font-style: normal;
+      padding: 2.2rem 2.8rem;
+      font-size: 1.4rem;
+      width: 100%;
+      margin-bottom: 1.5rem; }
+
+.footer {
+  padding: 5rem 0; }
+  .footer__row {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center; }
+  .footer__phone {
+    font-family: 'Proxima Nova Rg', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+    color: #292929; }
+  .footer__email {
+    font-size: 1.7rem; }
+
 @media screen and (max-width: 1700px) {
   .structure {
     background-size: 60%;
@@ -1424,6 +1564,11 @@ a {
 @media screen and (max-width: 1200px) {
   .feedback__form-image {
     display: none; } }
+
+@media screen and (max-width: 1100px) {
+  .contacts__row {
+    flex-direction: column;
+    align-items: center; } }
 
 @media screen and (max-width: 992px) {
   .header {
@@ -1585,7 +1730,26 @@ a {
   .materials__title {
     padding-bottom: 0; }
   .workinfo {
-    padding-bottom: 2rem; } }
+    padding-bottom: 2rem; }
+  .contacts__row {
+    flex-direction: column;
+    align-items: center; }
+  .contacts__col {
+    width: 100%; }
+    .contacts__col:first-child {
+      width: 100%;
+      margin-bottom: 4rem; }
+    .contacts__col:last-child {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+  .footer__row {
+    text-align: center;
+    flex-direction: column; }
+    .footer__row .logo {
+      margin-bottom: 3rem; }
+  .footer__phone {
+    margin-bottom: 3rem; } }
 
 @media screen and (max-width: 576px) {
   .header__contacts {
@@ -1636,4 +1800,6 @@ a {
   .solutions__column {
     display: none; }
   .solutions__mobile {
-    display: block; } }
+    display: block; }
+  .contacts__col {
+    text-align: center; } }

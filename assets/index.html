@@ -21,8 +21,11 @@
       <!--Scripts-->
       <script src="js/lib/jquery-3.5.1.min.js" defer></script>
       <script src="js/lib/slick.min.js" defer></script>
-      <script src="js/script.js" defer></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js" defer></script>
+      <script src="js/lib/jquery.validate.min.js" defer></script>
+      <script src="js/lib/jquery.mask.min.js" defer></script>
+
+      <script src="js/script.js" defer></script>
 
       <title>Plastering</title>
    </head>
@@ -46,7 +49,7 @@
             <!--Phone & button-->
             <div class="header__contacts">
                <a href="tel:+74957710508" class="header__contacts-phone">+7 495 771 05 08</a>
-               <button class="btn btn-primary header__contacts-button">получить консультацию</button>
+               <button class="btn btn-primary header__contacts-button" data-toggle="button">получить консультацию</button>
             </div>
          </div>
 
@@ -68,7 +71,7 @@
                <!--header form-->
                <div class="header__form-wrap">
 
-                  <form action="#" class="form header__form">
+                  <form action="send.php" method="post" class="form header__form">
                      <p class="from-title header__form-title">Для расчёта точной стоимости закажите <strong>выезд замерщика</strong></p>
                      <fieldset>
                         <legend>Ваше Имя</legend>
@@ -145,7 +148,7 @@
                      <p class="price__subtitle">Выберите вариант, который подходит Вам:</p>
                   </div>
                   <div class="price__heading-column">
-                     <button class="btn btn-primary price__heading-button">Рассчитать точую стоимость</button>
+                     <button class="btn btn-primary price__heading-button" data-toggle="button">Рассчитать точую стоимость</button>
                   </div>
                </div>
 
@@ -161,7 +164,7 @@
                         <li>Проведение работ</li>
                         <li>Уборка</li>
                      </ul>
-                     <button class="btn btn-primary price__button">Заказать</button>
+                     <button class="btn btn-primary price__button" data-toggle="button">Заказать</button>
                   </div>
                   <div class="price__column card">
                      <h3 class="price__column-title">Штукатурка под шпаклёвку</h3>
@@ -174,7 +177,7 @@
                         <li>Уборка</li>
                         <li>Гарантия 2 года</li>
                      </ul>
-                     <button class="btn btn-primary price__button">Заказать</button>
+                     <button class="btn btn-primary price__button" data-toggle="button">Заказать</button>
                   </div>
                   <div class="price__column card">
                      <h3 class="price__column-title">Штукатурка под обои</h3>
@@ -188,7 +191,7 @@
                         <li>Гарантия 2 года</li>
                         <li>Можно сразу клеить обои</li>
                      </ul>
-                     <button class="btn btn-primary price__button">Заказать</button>
+                     <button class="btn btn-primary price__button" data-toggle="button">Заказать</button>
                   </div>
                </div>
             </div>
@@ -301,7 +304,7 @@
                   </div>
 
                </div>
-               <form action="#" class="form feedback__form">
+               <form action="send.php" method="post" class="form feedback__form">
                   <h3 class="from-title feedback__form-title">Хотите так же? Оставьте Ваши контактные данные</h3>
                   <div class="feedback__form-input--wrap">
                      <fieldset>
@@ -564,7 +567,7 @@
 
                      <div class="workinfo__form-wrap">
 
-                        <form action="#" class="form workinfo__form">
+                        <form action="send.php" method="post" class="form workinfo__form">
                            <p class="from-title workinfo__form-title">Оставьте контактные данные для связи</p>
                            <fieldset>
                               <legend>Ваше Имя</legend>
@@ -592,27 +595,119 @@
                   <div class="extra__column">
                      <img src="img/extra/1.jpg" alt="picture of extra works" class="extra__column-image">
                      <p class="extra__column-title">Монтаж электропроводки</p>
-                     <button class="btn btn-primary extra__column-btn">Цены</button>
+                     <button class="btn btn-primary extra__column-btn" data-toggle="button">Цены</button>
                   </div>
                   <div class="extra__column">
                      <img src="img/extra/2.jpg" alt="picture of extra works" class="extra__column-image">
                      <p class="extra__column-title">Стяжка пола</p>
-                     <button class="btn btn-primary extra__column-btn">Цены</button>
+                     <button class="btn btn-primary extra__column-btn" data-toggle="button">Цены</button>
                   </div>
                   <div class="extra__column">
                      <img src="img/extra/3.jpg" alt="picture of extra works" class="extra__column-image">
                      <p class="extra__column-title">Сантехнические работы</p>
-                     <button class="btn btn-primary extra__column-btn">Цены</button>
+                     <button class="btn btn-primary extra__column-btn" data-toggle="button">Цены</button>
                   </div>
                </div>
             </div>
          </section>
 
+         <section class="section contacts">
+            <div class="container contacts__container">
+               <div class="row contacts__row">
+                  <div class="contacts__col">
+                     <h2 class="contacts__title">Контакты</h2>
+                     <p class="contacts__address">Адрес офиса:</p>
+                     <p class="contacts__address">Москва, копейское шоссе, 12, офис 34</p>
+                     <div class="map">
+                        <script src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aeb138de6268879e8a90fa9ec8c01df16877b381deab127b062c2398e17005bfb&amp;max-width=621&amp;height=185&amp;lang=en_RU&amp;scroll=false"
+                                defer></script>
+                     </div>
+                     <p class="contacts__address">Номер телефона:</p>
+                     <a href="tel:74957710508" class="contacts__number"><strong> +7 495 771 05 08</strong></a>
+                     <p class="contacts__email">
+                        E-mail: <br>
+                        <a class="secondary" href="mailto:order@gipsolit.ru">order@gipsolit.ru</a>
+                        <br>
+                     </p>
+                     <p class="contacts__info">
+                        Реквизиты: <br>
+                        ИНН 35453453 ОГРН 34234234
+                     </p>
+                  </div>
+                  <div class="contacts__col">
+                     <div class="contacts__form-wrap">
+
+                        <form action="send.php" method="post" class="form contacts__form">
+                           <p class="from-title contacts__form-title">Оставьте контактные данные для связи</p>
+                           <fieldset>
+                              <legend>Ваше Имя</legend>
+                              <input class="form-input contacts__form-input" type="text" name="userName">
+                           </fieldset>
+                           <fieldset>
+                              <legend>Номер телефона</legend>
+                              <input class="form-input contacts__form-input" type="tel" name="userPhone" inputmode="tel">
+                           </fieldset>
+                           <fieldset>
+                              <legend>Ваш email</legend>
+                              <input class="form-input contacts__form-input" type="email" name="userEmail" inputmode="email">
+                           </fieldset>
+                           <fieldset>
+                              <legend>Ваше сообщение</legend>
+                              <input class="form-input contacts__form-input" type="text" name="userMessage">
+                           </fieldset>
+                           <button class="btn btn-primary form-button contacts__form-button">записаться на просмотр</button>
+                        </form>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+
       </main>
+
+      <footer class="footer">
+         <div class="footer__container container">
+            <div class="footer__row row">
+               <!--logo-->
+               <div class="logo footer__logo">
+                  <img src="img/logo.png" alt="logo" class="logo__icon">
+                  <div class="logo__text">
+                     <p class="logo__text-title">ГИПСОЛИТ</p>
+                     <span class="logo__text-subtitle">Штукатурка стен</span>
+                  </div>
+               </div>
+               <!--contact phone-->
+               <a href="tel:+74957710508" class="footer__phone">+7 495 771 05 08</a>
+               <!--email-->
+               <div class="footer__email">
+                  <a class="secondary" href="mailto:order@gipsolit.ru">order@gipsolit.ru</a>
+                  <p>Пн-Пт: с 9:00 до 18:00</p>
+               </div>
+            </div>
+         </div>
+      </footer>
 
       <div class="modal">
          <div class="modal__dialog">
-            <h4>I'm popUP</h4>
+            <img class="modal__close" src="img/close.svg" alt="close popUp">
+            <div class="modal__form-wrap">
+
+               <form action="send.php" method="post" class="form modal__form">
+                  <p class="from-title modal__form-title">Оставьте Ваше имя и номер телефона, и наш менеджер свяжится с вами.</p>
+                  <fieldset>
+                     <legend>Ваше Имя</legend>
+                     <input class="form-input modal__form-input" type="text" name="userName">
+                  </fieldset>
+                  <fieldset>
+                     <legend>Номер телефона</legend>
+                     <input class="form-input modal__form-input" type="tel" name="userPhone" inputmode="tel">
+                  </fieldset>
+                  <button class="btn btn-primary form-button modal__form-button">Оставьте заявку</button>
+               </form>
+
+               <small class="modal__workdays">* - обратные звонки осуществляются в рабоче дни Пн-Пт с 9:00 до 18:00</small>
+            </div>
          </div>
       </div>
    </body>
