@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vsbdn/plastering.git"
+    "url": "git+https://github.com/boldurean/plastering.git"
   },
   "author": "Vasilii Boldurean",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/vsbdn/plastering/issues"
+    "url": "https://github.com/boldurean/plastering/issues"
   },
-  "homepage": "https://github.com/vsbdn/plastering#readme",
+  "homepage": "https://github.com/boldurean/plastering#readme",
   "devDependencies": {
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",

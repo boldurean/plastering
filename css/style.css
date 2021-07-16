@@ -100,17 +100,10 @@ pre {
 a {
   background-color: transparent; }
 
-/**
- * 1. Remove the bottom border in Chrome 57-
- * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
- */
 abbr[title] {
   border-bottom: none;
   /* 1 */
   text-decoration: underline;
-  /* 2 */
-  -webkit-text-decoration: underline dotted;
-  text-decoration: underline dotted;
   /* 2 */ }
 
 /**
@@ -758,8 +751,7 @@ a {
     font-size: 3.6rem;
     color: #ffffff; }
   .price__subtitle {
-    margin: 0;
-    margin-bottom: 9rem;
+    margin: 0 0 9rem;
     font-family: 'Proxima Nova Rg', sans-serif;
     font-weight: 400;
     font-style: normal;

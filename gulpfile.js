@@ -8,14 +8,14 @@ const tinypng = require('gulp-tinypng-compress');
 const autoprefixer = require('gulp-autoprefixer');
 
 function minifyCSS(done) {
-      src('assets/css/**.css')
+      src('./css/**.css')
       .pipe(cleanCSS({compatibility: 'ie8'}))
       .pipe(dest('dist/css'));
       done()
 }
 
 function minifyJS(done){
-    src(['assets/js/*.js', '!assets/js/*.min.js'])
+    src(['./js/*.js', '!./js/*.min.js'])
         .pipe(minify({
             ext:{
                 min:'.js'
@@ -24,46 +24,46 @@ function minifyJS(done){
 
         }))
         .pipe(dest('dist/js/'));
-    src('assets/js/**.min.js')
+    src('./js/**.min.js')
         .pipe(dest('dist/js/'));
     done();
 }
 
 function minifyHTML(done) {
-    src('assets/*.html')
+    src('./*.html')
         .pipe(htmlmin({ collapseWhitespace: true }))
         .pipe(dest('dist'));
     done()
 }
 function php(done) {
-    src('assets/**.php')
+    src('./**.php')
         .pipe(dest('dist'));
-    src('assets/phpmailer/**/**')
+    src('./phpmailer/**/**')
         .pipe(dest('dist/phpmailer/'));
     done();
 }
 function fonts(done) {
-    src('assets/fonts/**/**')
+    src('./fonts/**/**')
         .pipe(dest('dist/fonts/'));
     done();
 }
 
 function minifyIMG(done) {
-    src('assets/img/**/*.{png,jpg,jpeg}')
+    src('./img/**/*.{png,jpg,jpeg}')
         .pipe(tinypng({key: 'yTqLWYR5pCByFslJMlH4zZXL09Yc6vYr',}))
         .pipe(dest('dist/img/'));
-    src(['assets/img/**/*.ico', 'assets/img/**/*.svg'])
+    src(['./img/**/*.ico', './img/**/*.svg'])
         .pipe(dest('dist/img/'))
     done();
 }
 
 function style() {
-  return src('./assets/sass/**/*.sass', './assets/sass/**/*.scss')
+  return src('./sass/**/*.sass', './sass/**/*.scss')
       .pipe(sass())
       .pipe(autoprefixer({
         cascade: false
       }))
-      .pipe(dest('./assets/css'))
+      .pipe(dest('./css'))
       .pipe(browserSync.stream())
 }
 
@@ -71,13 +71,13 @@ function server() {
   style();
   browserSync.init({
     server: {
-      baseDir: "./assets/"
+      baseDir: "./"
     }
   })
-  watch("./assets/sass/**/*.sass", style);
-  watch("./assets/sass/**/*.scss", style);
-  watch("./assets/js/**/*.js").on('change', browserSync.reload);
-  watch("./assets/*.html").on('change', browserSync.reload);
+  watch("./sass/**/*.sass", style);
+  watch("./sass/**/*.scss", style);
+  watch("./js/**/*.js").on('change', browserSync.reload);
+  watch("./*.html").on('change', browserSync.reload);
 }
 
 exports.server = server;
