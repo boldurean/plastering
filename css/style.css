@@ -528,7 +528,7 @@ a {
       font-family: 'Proxima Nova Lt', sans-serif;
       font-weight: 600;
       font-style: normal;
-      font-size: 1.8rem; }
+      font-size: 1.6rem; }
       .header__pricetag-text strong {
         font-size: 3rem; }
   .header__payment {
@@ -540,7 +540,7 @@ a {
     font-weight: 700;
     font-style: normal;
     font-size: 2.2rem;
-    line-height: 2.64;
+    line-height: 1.64;
     letter-spacing: 0.4px; }
   .header__workdays {
     display: block;

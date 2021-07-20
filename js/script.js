@@ -3,22 +3,19 @@ $(document).ready(function () {
     const headerButton = $(".header__contacts-button");
     const modalButton = document.querySelectorAll('[data-toggle="button"]');
     const modal = document.getElementsByClassName('modal');
-    const forms = document.querySelectorAll('.form');
 
-
-    //медиа изменения
 
     if ($(window).width() < 576) {
-        headerButton.text("Консультация");
+        headerButton.text("Consultation");
     } else {
-        headerButton.text("Получить консультацию");
+        headerButton.text("Request a call");
     }
 
     $(window).resize(function () {
         if ($(window).width() < 576) {
-            headerButton.text("Консультация");
+            headerButton.text("Consultation");
         } else {
-            headerButton.text("Получить консультацию");
+            headerButton.text("Request a call");
         }
     });
 
@@ -104,7 +101,6 @@ $(document).ready(function () {
         $(this).next().addClass('show-list');
     })
 
-    //Показ модального окна при нажатии на кнопки
 
     $(modalButton).click(function () {
         $(modal).toggleClass("active");
@@ -161,24 +157,24 @@ $(document).ready(function () {
                     minlength: 15
                 },
             },
-            //сообщения ошибок
+
             messages: {
                 userName: {
-                    required: "Заполните поле",
-                    minlength: "Имя должно быть не короче 2 букв",
-                    maxlength: "Имя должно быть не длинее 15 букв"
+                    required: "Required",
+                    minlength: "At least 2 symbols",
+                    maxlength: "Not more than 20 symbols"
                 },
                 userPhone: {
-                    required: "Заполните поле",
-                    minlength: "Введите полный номер телефона"
+                    required: "Required",
+                    minlength: "Number has to be valid"
                 },
                 userEmail: {
-                    required: "Заполните поле",
-                    email: "Введите корректный Email"
+                    required: "Required",
+                    email: "Email has to be valid"
                 },
                 userMessage: {
-                    required: "Задайте Ваш вопрос",
-                    minlength: "сообщение должен быть не короче 15 символов"
+                    required: "Ask you question",
+                    minlength: "At least 15 symbols"
                 },
             },
             submitHandler: function (form) {
